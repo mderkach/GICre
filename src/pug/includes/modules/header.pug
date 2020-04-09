@@ -1,0 +1,36 @@
+header.header
+  .header__top
+    .container
+      .row
+        nav.header__navbar
+          .header-collapse
+            ul.header__nav
+              li.header__nav-item Главная
+              li.header__nav-item О компании
+              li.header__nav-item Перестрахование
+              li.header__nav-item Финансы
+              li.header__nav-item Пресс-центр
+              li.header__nav-item Контакты
+            form.header__search(action="#")
+              input.header__search-input(type="text", name="search", placeholder="Поиск")
+              button.header__search-button
+                img(src="../../../assets/img/icons/icon-loupe.svg", alt="")
+            .header__controls
+              button.header__controls-button
+                img(src="../../../assets/img/icons/icon-text-adjust.svg", alt="")
+              button.header__controls-button.is-active RU
+              button.header__controls-button EN
+  .header__bottom
+    .container
+      .row.d-flex.justify-content-between.align-items-center
+        .header__logo-wrapper
+          img.header__logo(src="../../../assets/img/logo.png", alt="")
+          h1.header__logo-header
+            span ДжиАйСи&nbsp
+            | Перестрахование
+        .header__rank-wrapper
+          img.header__rank(src="../../../assets/img/rank.png", alt="")
+          p.header__rank-descr
+            | Ranked 11th Among the top <br>
+            | 40 global reinsurance groups <br>
+            | by S&P Global Ratings
