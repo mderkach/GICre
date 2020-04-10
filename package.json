@@ -1,7 +1,7 @@
 {
-  "name": "dishware",
+  "name": "gicre",
   "version": "1.0.0",
-  "description": "dishware",
+  "description": "gicre",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.dev.conf.js",

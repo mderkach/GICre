@@ -126,7 +126,7 @@ module.exports = {
         use: {
           loader: "bootstrap.native-loader",
           options: {
-            only: ["modal"],
+            only: ["dropdown"],
           },
         },
       },
