@@ -1,0 +1,28 @@
+.screen {
+  &__index {
+    &-about {
+      padding: 36px 0 43px;
+
+      h2 {
+        margin-bottom: 40px;
+        color: #164194;
+      }
+
+      &__descr {
+        span {
+          font-weight: bold;
+          color: #164194;
+        }
+      }
+
+      &__list {
+        margin-bottom: 40px;
+      }
+
+      &__button {
+        margin: 0 auto;
+        color: #164194;
+      }
+    }
+  }
+}
