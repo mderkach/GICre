@@ -77,7 +77,9 @@ button {
 // example: @import "modules/my-module.scss";
 @import "./modules/header";
 @import "./modules/footer";
+@import "./modules/fast-links";
 @import "./components/slider/slider__banner";
 @import "./components/screen/screen__index-about";
 @import "./components/screen/screen__index-news";
 @import "./components/cards/card__news";
+@import "./components/cards/card__link";

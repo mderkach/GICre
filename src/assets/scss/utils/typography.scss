@@ -35,6 +35,13 @@
     line-height: 15px;
   }
 
+  &__med {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
   &__big {
     font-style: normal;
     font-weight: bold;
@@ -81,4 +88,9 @@
   border-radius: 0px;
   background: #fff;
   @extend .text__small;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
 }

@@ -1,0 +1,9 @@
+- var cards = [{"header":"Business", "text": "As a sole reinsurer in the domestic reinsurance market, GIC Re provides reinsurance to the direct general insurance companies in the Indian market", "link": "#"}, {"header":"Financials", "text": "As GIC Re spreads its wings, it has emerged as an effective reinsurance solution partner for the Afro-Asian Region", "link": "#"},{"header":"Our Global Footprints", "text": "As a truly world-class Reinsurer, GIC Re has its permanent offices in UK, Malaysia, Russia and U.A.E. and is continuously persevering to enter new frontiers.", "link": "#"}, {"header":"Our Global Footprints", "text": "As a truly world-class Reinsurer, GIC Re has its permanent offices in UK, Malaysia, Russia and U.A.E. and is continuously persevering to enter new frontiers.", "link": "#"}];
+
+.card__link-wrapper
+  each card in cards
+    .card__link
+      .card__link-body
+        p.text__big.card__link-header #{card.header}
+        p.text__med.card__link-text #{card.text}
+        a.btn.card__link-btn(href=card.link) Далее
