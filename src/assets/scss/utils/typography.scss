@@ -27,6 +27,29 @@
   line-height: 22px;
 }
 
+.text {
+  &__small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  &__big {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 .list {
   font-style: normal;
   font-weight: normal;
@@ -57,9 +80,5 @@
   border: 1px solid #164194;
   border-radius: 0px;
   background: #fff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 15px;
-  text-align: center;
+  @extend .text__small;
 }

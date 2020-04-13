@@ -1,0 +1,13 @@
+.screen {
+  &__index {
+    &-news {
+      padding: 28px 36px;
+      background: #F6F6F6;
+
+      h2 {
+        margin-bottom: 36px;
+        color: #164194;
+      }
+    }
+  }
+}
