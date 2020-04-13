@@ -1,49 +1,57 @@
 header.header
   .header__top
     .container
-      .row
-        nav.header__navbar
-          .header-collapse
-            ul.header__nav
-              li.header__nav-item
-                a.header__nav-link(href="#") Главная
-              li.header__nav-item.dropdown
-                a.header__nav-link(href="#") О компании
-                svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-                .header__nav-dropdown__menu
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-              li.header__nav-item.dropdown
-                a.header__nav-link(href="#") Перестрахование
-                svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-                .header__nav-dropdown__menu
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-                  a.header__nav-dropdown__menu-link(href="#") Общая информация
-              li.header__nav-item.dropdown
-                a.header__nav-link(href="#") Финансы
-                svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-              li.header__nav-item.dropdown
-                a.header__nav-link(href="#") Пресс-центр
-                svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-              li.header__nav-item
-                a.header__nav-link(href="#") Контакты
-            form.header__search(action="#")
-              input.header__search-input(type="text", name="search", placeholder="Поиск")
-              button.header__search-button
-                img(src="../../../assets/img/icons/icon-loupe.svg", alt="")
-            .header__controls
-              button.header__controls-button
-                img(src="../../../assets/img/icons/icon-text-adjust.svg", alt="")
-              button.header__controls-button.is-active RU
-              button.header__controls-button EN
+      nav.header__navbar
+        .header-collapse
+          ul.header__nav
+            li.header__nav-item
+              a.header__nav-link(href="#") Главная
+            li.header__nav-item.dropdown
+              a.header__nav-link(href="#") О компании
+              svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+              .header__nav-dropdown__menu
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+            li.header__nav-item.dropdown
+              a.header__nav-link(href="#") Перестрахование
+              svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+              .header__nav-dropdown__menu
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+                a.header__nav-dropdown__menu-link(href="#") Общая информация
+            li.header__nav-item.dropdown
+              a.header__nav-link(href="#") Финансы
+              svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+            li.header__nav-item.dropdown
+              a.header__nav-link(href="#") Пресс-центр
+              svg(width='14' height='8' viewbox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+            li.header__nav-item
+              a.header__nav-link(href="#") Контакты
+          .header__controls
+            button.header__controls-button
+              img(src="../../../assets/img/icons/icon-text-adjust.svg", alt="")
+            button.header__controls-button.is-active RU
+            button.header__controls-button EN
+        .header__controls-wrapper
+          button.hamburger.hamburger--spin.header__controls-hamburger(type='button')
+            span.hamburger-box
+              span.hamburger-inner
+          form.header__search(action="#")
+            input.header__search-input(type="text", name="search", placeholder="Поиск")
+            button.header__search-button
+              img(src="../../../assets/img/icons/icon-loupe.svg", alt="")
+          .header__controls
+            button.header__controls-button
+              img(src="../../../assets/img/icons/icon-text-adjust.svg", alt="")
+            button.header__controls-button.is-active RU
+            button.header__controls-button EN
   .header__bottom
     .container
       .row.d-flex.justify-content-between.align-items-center

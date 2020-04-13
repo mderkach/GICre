@@ -2,7 +2,7 @@
   &__news {
     position: relative;
     width: 100%;
-    max-width: 338px;
+    max-width: 320px;
     margin-bottom: 25px;
     border-radius: 8px;
 
@@ -23,6 +23,7 @@
     &-wrapper {
       position: relative;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
     }

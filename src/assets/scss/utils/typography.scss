@@ -6,6 +6,11 @@
     font-size: 42px;
     line-height: 57px;
     text-transform: uppercase;
+
+    @include media-breakpoint-down('md') {
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 
   &__h2 {

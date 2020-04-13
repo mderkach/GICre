@@ -23,3 +23,15 @@ if (links) {
     }
   });
 }
+
+// hamburger
+let hamburger = document.querySelector(".hamburger");
+let hambmenu = document.querySelector(".header-collapse");
+
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("is-active");
+    hambmenu.classList.toggle("is-active");
+    document.body.classList.toggle("no-scroll");
+  });
+}
