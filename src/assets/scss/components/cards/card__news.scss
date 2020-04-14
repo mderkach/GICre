@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     max-width: 320px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 8px;
 
     &:hover {
@@ -13,6 +13,7 @@
         left: 0;
         border-radius: 8px;
         box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.4);
+        z-index: 10;
 
         .card__news-btn {
           display: flex;
