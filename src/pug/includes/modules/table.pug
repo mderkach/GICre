@@ -1,0 +1,10 @@
+block variables
+
+.table__wrapper
+  each item in table
+    a.table__item(href=item.link)
+      .paragraph.table__item-name !{item.name}
+      .text__small.table__item-details
+        if item.type
+          img(src="../../../assets/img/icons/icon-pdf.svg", alt="")
+        | !{item.details}

@@ -1,0 +1,48 @@
+.table {
+  &__wrapper {
+    @include make-container();
+    @include make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints);
+  }
+
+  &__item {
+    @include make-row();
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    &:nth-child(2n-1) {
+      background: #F6F6F6;
+    }
+
+    &:hover {
+
+      .table__item-name,
+      .table__item-details {
+        color: #164194;
+      }
+    }
+
+    &-name {
+      @include make-col(8);
+      @include make-col-offset(1);
+      @include make-col-ready();
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    &-details {
+      @include make-col(3);
+      @include make-col-ready();
+      color: #828282;
+      text-decoration: underline;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: -8px;
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
