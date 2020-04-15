@@ -1,0 +1,35 @@
+.breadcrumb {
+  position: relative;
+  margin-right: 25px;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: -19px;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../../../assets/img/icons/icon-arrow-right.svg);
+    transform: translateY(-50%);
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    @include make-col(12);
+    @include make-col-ready();
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
