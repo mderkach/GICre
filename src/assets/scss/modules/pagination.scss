@@ -1,0 +1,27 @@
+.pagination {
+  display: block;
+  width: 66px;
+  height: 66px;
+  border: 13px solid #fff;
+  background-color: #f2f2f2;
+  margin: 0 14px;
+
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--active {
+    border-color: #f2f2f2;
+    background-color: #164194;
+  }
+
+  &__wrapper {
+    @include make-row();
+    justify-content: center;
+  }
+}
