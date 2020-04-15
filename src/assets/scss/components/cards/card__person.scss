@@ -1,0 +1,50 @@
+.card {
+  &__person {
+    width: 100%;
+    max-width: 338px;
+    height: auto;
+    margin: 0 12px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &-img {
+      display: block;
+      width: 120px;
+      height: 120px;
+      margin: 18px auto 20px;
+    }
+
+    &-body {
+      padding: 0 24px 30px;
+      text-align: center;
+    }
+
+    &-name {
+      margin-bottom: 10px;
+      color: #000;
+
+      span {
+        font-style: italic;
+        text-transform: capitalize;
+      }
+    }
+
+    &-regalia {
+      margin-bottom: 16px;
+      color: #616161;
+    }
+  }
+}

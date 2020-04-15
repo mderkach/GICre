@@ -1,0 +1,11 @@
+block variables
+
+.card__person-wrapper
+  each card in cards
+    .card__person
+      img.card__person-img(src="../../../../assets/img/person.png", alt="")
+      .card__person-body
+        p.header__h3.card__person-name #{card.name}
+        p.paragraph.card__person-regalia #{card.regalia}
+        if card.regalia2
+          p.paragraph.card__person-regalia #{card.regalia2}

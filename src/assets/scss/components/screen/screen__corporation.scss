@@ -1,0 +1,16 @@
+.screen {
+  &__corporation {
+    padding-bottom: 40px;
+
+    h2 {
+      color: #164194;
+      margin-top: 30px;
+      margin-bottom: 48px;
+    }
+
+    &-list {
+      margin-bottom: 0;
+      padding: 0 0 0 18px;
+    }
+  }
+}
