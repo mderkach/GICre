@@ -101,6 +101,10 @@
 
     &-wrapper {
       display: flex;
+
+      @include media-breakpoint-down('lg') {
+        margin-bottom: 16px;
+      }
     }
   }
 }
