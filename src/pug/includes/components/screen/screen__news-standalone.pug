@@ -1,0 +1,40 @@
+section.screen__news
+  .container
+    .row
+      .col-12
+        h2.header__h2 Новости
+    .screen__news-wrapper
+      aside.screen__news-aside
+        img.screen__news-aside-img(src="../../../../assets/img/aside.png", alt="")
+      main.screen__news-main
+        .screen__news-main-content
+          .screen__news-main-before
+          p.text__small.screen__news-date 23 марта 2020 года
+          h3.text__big.screen__news-heading Where To Look For Cheap Brochure Printing
+          p.paragraph.text__regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et molestie nisl ligula placerat sapien amet, ac. Est, sem erat pulvinar morbi id quis tristique a. Placerat congue mauris aliquam faucibus tellus pellentesque felis enim, morbi. Feugiat sit luctus faucibus pulvinar cum. Condimentum massa aliquet amet in tempor, diam. Pretium eleifend hendrerit platea arcu non platea. Nisl maecenas dignissim consequat id maecenas in tellus purus sit.
+          br
+          p.paragraph.text__regular Posuere velit, eu aenean quisque at nisi, sit. Leo in platea commodo enim, id a fusce turpis facilisi. Cum amet, ipsum praesent sit gravida sit sit. Eget volutpat imperdiet pharetra facilisis scelerisque ipsum. Consequat eget cras feugiat tortor, eget massa in. In ipsum mattis sapien massa amet egestas purus risus. Aliquam consequat purus ante consectetur. Blandit leo ullamcorper adipiscing mi at. Bibendum suspendisse eget non enim a arcu faucibus amet.
+          br
+          p.paragraph.text__regular Egestas neque lectus in mauris cursus lorem. Netus libero habitant cursus ultrices scelerisque cras vitae mi tristique. Blandit sed viverra mauris tellus. Vehicula bibendum netus ac tellus. Nisl habitasse sem nullam urna pellentesque. Sed gravida non lectus maecenas felis, lacus. Odio condimentum sociis eget tempus facilisis. Erat sit feugiat ultricies at bibendum egestas velit in egestas. Habitant sem massa ante quisque et amet. Feugiat bibendum duis ipsum neque, ante integer.
+          br
+          p.paragraph.text__regular Dictum quisque ut duis et, ultricies magna lobortis maecenas. Laoreet mauris elit aliquam, sit. Vel adipiscing id id gravida arcu. Pretium viverra quis sem ornare. Fringilla mus ultricies placerat porta. Consectetur fringilla et scelerisque duis tortor vitae. Augue lorem ultricies pharetra, eget duis. Gravida ipsum cras tortor, risus ornare. Nisl urna felis sed nec molestie feugiat est sed nulla. Varius interdum et ornare id. Tristique nisl accumsan accumsan magna et rhoncus. Libero sem pharetra morbi nibh justo.
+          br
+          p.paragraph.text__regular Dictum integer sed eget bibendum eu massa tristique phasellus. Sed in consequat a metus ultrices. Ornare porttitor purus in blandit eleifend. Feugiat non scelerisque mattis pellentesque et lorem tellus nec, nunc.
+          br
+          a.text__small.screen__news-details(href="#")
+            span.download Скачать
+            img(src="../../../../assets/img/icons/icon-pdf.svg", alt="")
+            span 1,5 мб  Загружено 20.12.2020 г. 12:12
+        .screen__news-main-cards
+          block variables
+            - var i = 0;
+            - var j = 3;
+
+            include ../cards/card__news
+  .container
+    block vars2
+    - var k = 0;
+    - var l = 8;
+
+      include ../cards/card__news-standalone
+    include ../../modules/pagination
