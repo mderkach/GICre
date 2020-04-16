@@ -94,4 +94,13 @@
       }
     }
   }
+
+  &__icon {
+    display: block;
+    margin-right: 10px;
+
+    &-wrapper {
+      display: flex;
+    }
+  }
 }
