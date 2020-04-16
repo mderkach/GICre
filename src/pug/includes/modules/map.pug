@@ -26,7 +26,10 @@
 block script
   script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript')
   script(type='text/javascript').
-    ymaps.ready(init);
+    var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    if (vw > 576) {
+      ymaps.ready(init);
+    }
     function init(){
       var myMap = new ymaps.Map("map", {
       center: [55.76874456898029,37.58894299999992],
