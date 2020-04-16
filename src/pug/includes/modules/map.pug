@@ -1,0 +1,43 @@
+.col-12
+  .contacts__map#map
+    .contacts
+      h2.text__semibig.contacts__header ООО “ДжиАйСи Перестрахование”
+      p.text__regular.contacts__descr
+        img(src="../../../assets/img/icons/icon-map-pin.svg", alt="")
+        span 123056, г. Москва, ул. Гашека, д. 7, стр. 1 <br> Бизнес центр “Дукат Плейс II”, 6 этаж, офис 610
+      br
+      p.text__regular.contacts__descr
+        img(src="../../../assets/img/icons/icon-clock.svg", alt="")
+        span Пн-Пт 09:30-18:00
+      br
+      a.text__regular.contacts__descr.contacts__link(href="tel:+74996575510")
+        img(src="../../../assets/img/icons/icon-phone.svg", alt="")
+        span +7 (499) 657-5510
+      a.text__regular.contacts__descr.contacts__link(href="mailto:info@gicre.ru")
+        img(src="../../../assets/img/icons/icon-mail.svg", alt="")
+        span info@gicre.ru
+      br
+      a.text__regular.contacts__descr.contacts__link(href="www.gicre.ru" target="_blank")
+        img(src="../../../assets/img/icons/icon-globe.svg", alt="")
+        span www.gicre.ru
+
+
+
+block script
+  script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript')
+  script(type='text/javascript').
+    ymaps.ready(init);
+    function init(){
+      var myMap = new ymaps.Map("map", {
+      center: [55.76874456898029,37.58894299999992],
+      controls: [],
+      zoom: 17,
+      });
+      var placemark = new ymaps.Placemark([55.76891996672077,37.58870696560663], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: '../../../assets/img/icons/icon-pin.png',
+        iconImageSize: [54, 66],
+      });
+      myMap.behaviors.disable('scrollZoom');
+      myMap.geoObjects.add(placemark);
+    }
