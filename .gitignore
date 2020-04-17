@@ -2,7 +2,7 @@
 .gulp
 .idea
 .vscode
-
+*.zip
 # Node
 node_modules
 
