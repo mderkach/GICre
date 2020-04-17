@@ -10,10 +10,11 @@
     padding-bottom: 14px;
 
     &:nth-child(2n-1) {
-      background: #F6F6F6;
+      background: #f6f6f6;
     }
 
     &:hover {
+      cursor: pointer !important;
 
       .table__item-name,
       .table__item-details {
@@ -28,12 +29,12 @@
       color: #000000;
       text-decoration: underline;
 
-      @include media-breakpoint-down('md') {
+      @include media-breakpoint-down("md") {
         @include make-col(8);
         @include make-col-offset(0);
       }
 
-      @include media-breakpoint-down('sm') {
+      @include media-breakpoint-down("sm") {
         @include make-col(12);
       }
     }
@@ -44,11 +45,11 @@
       color: #828282;
       text-decoration: underline;
 
-      @include media-breakpoint-down('md') {
+      @include media-breakpoint-down("md") {
         @include make-col(4);
       }
 
-      @include media-breakpoint-down('sm') {
+      @include media-breakpoint-down("sm") {
         @include make-col(12);
         display: flex;
         margin-top: 16px;
@@ -62,7 +63,7 @@
         width: 20px;
         height: 20px;
 
-        @include media-breakpoint-down('sm') {
+        @include media-breakpoint-down("sm") {
           position: relative;
           left: 0;
         }

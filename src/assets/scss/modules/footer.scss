@@ -45,11 +45,40 @@
 
     @include media-breakpoint-down('lg') {
       @include make-col(12);
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &-block {
+      @include media-breakpoint-down('md') {
+        @include make-col(6)
+      }
+
+      &-wrapper {
+        @include make-row();
+        padding-left: $gutter/2;
+        padding-right: $gutter/2;
+
+        &.footer__links-block-wrapper-full {
+          width: 100%;
+          padding: 0;
+        }
+
+        .footer__links-block {
+          @include make-col(12);
+
+          &.footer__links-block_half {
+            @include make-col(6);
+
+            @include make-col-ready();
+
+            @include media-breakpoint-down('xs') {
+              @include make-col(12);
+            }
+          }
+        }
+      }
+
       &__header {
         display: block;
         color: #fff;

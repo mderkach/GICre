@@ -3,7 +3,7 @@ import Swiper from "swiper";
 let swiper = new Swiper(".slider__banner", {
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   wrapperClass: "slider__banner-wrapper",
   slideClass: "slider__banner-slide",

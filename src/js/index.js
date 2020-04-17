@@ -13,12 +13,20 @@ if (links) {
     let menu = link.querySelector(".header__nav-dropdown__menu");
 
     if (menu && trigger) {
-      link.addEventListener("click", (e) => {
+      link.addEventListener("mouseover", (e) => {
         e.preventDefault();
         triggers.forEach((trigger) => trigger.classList.remove("is-active"));
         menus.forEach((menu) => menu.classList.remove("is-active"));
         trigger.classList.toggle("is-active");
         menu.classList.toggle("is-active");
+      });
+
+      link.addEventListener("mouseleave", (e) => {
+        e.preventDefault();
+        triggers.forEach((trigger) => trigger.classList.remove("is-active"));
+        menus.forEach((menu) => menu.classList.remove("is-active"));
+        trigger.classList.remove("is-active");
+        menu.classList.remove("is-active");
       });
     }
   });

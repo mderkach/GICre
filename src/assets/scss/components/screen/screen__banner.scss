@@ -5,6 +5,11 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
+    @include media-breakpoint-down('md') {
+      padding-right: $gutter/2;
+      padding-left: $gutter/2;
+    }
+
     h2 {
       margin-top: 25px;
       font-family: Times New Roman;
@@ -16,7 +21,7 @@
       color: #FFFFFF;
 
       @include media-breakpoint-down('md') {
-        font-size: 24px;
+        font-size: 22px;
       }
     }
   }
