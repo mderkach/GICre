@@ -1,34 +1,34 @@
 .header {
   &__h1 {
-    font-family: 'Times New Roman';
+    font-family: "Times New Roman";
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
-    line-height: 57px;
+    font-size: 39px;
+    line-height: 135%;
     text-transform: uppercase;
 
-    @include media-breakpoint-down('md') {
-      font-size: 28px;
-      line-height: 36px;
+    @include media-breakpoint-down("md") {
+      font-size: 25px;
+      line-height: 32px;
     }
   }
 
   &__h2 {
-    font-family: 'Times New Roman';
+    font-family: "Times New Roman";
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 27px;
+    line-height: 36px;
     text-align: center;
     text-transform: uppercase;
   }
 
   &__h3 {
-    font-family: 'Times New Roman';
+    font-family: "Times New Roman";
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 21px;
+    line-height: 28px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -38,52 +38,52 @@
   font-family: Tahoma;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .text {
   &__small {
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 8px;
+    line-height: 12px;
   }
 
   &__med {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 11px;
+    line-height: 15px;
   }
 
   &__semibig {
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 24px
+    font-size: 15px;
+    line-height: 20px;
   }
 
   &__big {
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 23px;
   }
 
   &__regular {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 
 .list {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 18px;
   list-style: none;
 
   li {

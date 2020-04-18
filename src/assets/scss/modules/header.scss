@@ -51,8 +51,8 @@
       font-family: Tahoma;
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 13px;
+      line-height: 18px;
       color: #000000;
       text-decoration: none;
 
@@ -100,7 +100,7 @@
           font-family: Tahoma;
           font-style: normal;
           font-weight: normal;
-          font-size: 14px;
+          font-size: 11px;
           line-height: 135%;
           color: #000;
 
@@ -166,8 +166,8 @@
       font-family: Tahoma;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 135%;
+      font-size: 11px;
+      line-height: 15%;
       color: #000;
 
       &::placeholder {
@@ -238,8 +238,8 @@
       font-family: Tahoma;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 135%;
+      font-size: 15px;
+      line-height: 20px;
       color: #000000;
 
       &.is-active {
@@ -289,17 +289,17 @@
       font-family: 'Times New Roman';
       font-style: normal;
       font-weight: normal;
-      font-size: 36px;
-      line-height: 135%;
+      font-size: 33px;
+      line-height: 45px;
       color: #000;
 
       @include media-breakpoint-down('md') {
-        font-size: 30px;
+        font-size: 27px;
       }
 
       @include media-breakpoint-down('md') {
         margin-top: 16px;
-        font-size: 24px;
+        font-size: 21px;
       }
 
       span {
@@ -329,8 +329,8 @@
       font-family: Tahoma;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
+      font-size: 11px;
+      line-height: 15px;
       color: #000000;
     }
   }

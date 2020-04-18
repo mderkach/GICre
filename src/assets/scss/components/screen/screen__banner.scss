@@ -15,13 +15,13 @@
       font-family: Times New Roman;
       font-style: normal;
       font-weight: bold;
-      font-size: 42px;
-      line-height: 57px;
+      font-size: 39px;
+      line-height: 53px;
       text-transform: uppercase;
       color: #FFFFFF;
 
       @include media-breakpoint-down('md') {
-        font-size: 22px;
+        font-size: 19px;
       }
     }
   }
