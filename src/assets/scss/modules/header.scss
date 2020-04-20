@@ -1,11 +1,18 @@
 .header {
   &__top {
-    padding: 11px 0 9px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+    @include media-breakpoint-down("xl") {
+      padding: 11px 0 9px;
+    }
   }
 
   &__bottom {
     padding: 12px 0 21px;
+
+    @include media-breakpoint-down("xs") {
+      padding-left: $gutter/2;
+      padding-right: $gutter/2;
+    }
   }
 
   &__navbar {
@@ -20,7 +27,7 @@
     padding-left: 0;
     list-style: none;
 
-    @include media-breakpoint-down('xl') {
+    @include media-breakpoint-down("xl") {
       @include make-container();
       @include make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints);
       flex-direction: column;
@@ -28,11 +35,12 @@
 
     &-item {
       position: relative;
-      padding-right: 20px;
+      padding: 11px 20px 9px 0;
 
-      @include media-breakpoint-down('xl') {
+      @include media-breakpoint-down("xl") {
         @include make-row();
         margin: 8px 0;
+        padding: 0;
       }
 
       svg {
@@ -41,7 +49,7 @@
         top: 50%;
         transform: translateY(-50%);
 
-        @include media-breakpoint-down('xl') {
+        @include media-breakpoint-down("xl") {
           display: none;
         }
       }
@@ -61,7 +69,7 @@
         text-decoration: underline;
         color: #164194;
 
-        ~svg {
+        ~ svg {
           path {
             stroke: #164194;
           }
@@ -72,15 +80,16 @@
     &-dropdown {
       &__menu {
         position: absolute;
-        top: 36px;
+        top: 44px;
         left: 0;
         display: none;
         flex-direction: column;
         width: auto;
         background: #fff;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+        z-index: 5;
 
-        @include media-breakpoint-down('xl') {
+        @include media-breakpoint-down("xl") {
           position: relative;
           top: 0;
           display: flex;
@@ -120,7 +129,7 @@
     display: flex;
     align-items: center;
 
-    @include media-breakpoint-down('xl') {
+    @include media-breakpoint-down("xl") {
       display: none;
 
       &.is-active {
@@ -140,7 +149,7 @@
     .header__controls {
       display: none;
 
-      @include media-breakpoint-down('xs') {
+      @include media-breakpoint-down("xs") {
         display: flex;
         margin-top: 16px;
       }
@@ -152,7 +161,7 @@
     width: 100%;
     max-width: 285px;
 
-    @include media-breakpoint-down('xs') {
+    @include media-breakpoint-down("xs") {
       max-width: 220px;
     }
 
@@ -162,7 +171,7 @@
       max-width: 285px;
       margin: 0 0 0 auto;
       padding: 4px 12px 5px;
-      border: 1px solid #F2F2F2;
+      border: 1px solid #f2f2f2;
       font-family: Tahoma;
       font-style: normal;
       font-weight: normal;
@@ -171,13 +180,13 @@
       color: #000;
 
       &::placeholder {
-        color: #BDBDBD;
+        color: #bdbdbd;
       }
     }
 
     &-button {
       position: absolute;
-      top: 6px;
+      top: 4px;
       right: 24px;
       display: block;
       width: 16px;
@@ -199,12 +208,11 @@
     margin-right: 0;
     margin-left: auto;
 
-
-    @include media-breakpoint-down('xl') {
+    @include media-breakpoint-down("xl") {
       margin-left: 0;
     }
 
-    @include media-breakpoint-down('xs') {
+    @include media-breakpoint-down("xs") {
       display: none;
     }
 
@@ -213,17 +221,17 @@
       @include make-col-ready();
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
-      @include media-breakpoint-down('xl') {
+      @include media-breakpoint-down("xl") {
         @include make-col(12);
       }
-
     }
 
     &-hamburger {
       display: none;
 
-      @include media-breakpoint-down('xl') {
+      @include media-breakpoint-down("xl") {
         display: flex;
       }
     }
@@ -243,7 +251,7 @@
       color: #000000;
 
       &.is-active {
-        border-color: #F2F2F2;
+        border-color: #f2f2f2;
         color: #164194;
       }
 
@@ -263,7 +271,7 @@
     height: 128px;
     margin-right: 70px;
 
-    @include media-breakpoint-down('xl') {
+    @include media-breakpoint-down("xl") {
       margin-right: 30px;
     }
 
@@ -275,29 +283,29 @@
       display: flex;
       align-items: center;
 
-      @include media-breakpoint-down('xl') {
+      @include media-breakpoint-down("xl") {
         margin-bottom: 16px;
       }
 
-      @include media-breakpoint-down('md') {
+      @include media-breakpoint-down("md") {
         flex-wrap: wrap;
         justify-content: center;
       }
     }
 
     &-header {
-      font-family: 'Times New Roman';
+      font-family: "Times New Roman";
       font-style: normal;
       font-weight: normal;
       font-size: 33px;
       line-height: 45px;
       color: #000;
 
-      @include media-breakpoint-down('md') {
+      @include media-breakpoint-down("md") {
         font-size: 27px;
       }
 
-      @include media-breakpoint-down('md') {
+      @include media-breakpoint-down("md") {
         margin-top: 16px;
         font-size: 21px;
       }
@@ -318,7 +326,7 @@
       display: flex;
       align-items: flex-end;
 
-      @include media-breakpoint-down('md') {
+      @include media-breakpoint-down("md") {
         flex-wrap: wrap;
         justify-content: center;
       }
