@@ -84,6 +84,7 @@
       display: block;
       color: #fff;
       margin-bottom: 0;
+      font-size: 11px;
 
       @include media-breakpoint-down("lg") {
         margin-bottom: 16px;
