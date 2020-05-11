@@ -43,3 +43,13 @@ if (hamburger) {
     document.body.classList.toggle("no-scroll");
   });
 }
+
+let setBlind = document.querySelectorAll(".set-blind");
+console.log(setBlind);
+if (setBlind) {
+  setBlind.forEach((button) => {
+    button.addEventListener("click", () => {
+      document.body.classList.toggle("is-blind");
+    });
+  });
+}

@@ -117,3 +117,57 @@
     text-decoration: none;
   }
 }
+
+.is-blind {
+  .header {
+    &__h1 {
+      font-size: 4rem;
+
+      @include media-breakpoint-down("md") {
+        font-size: 3rem;
+      }
+    }
+
+    &__h2 {
+      font-size: 3rem;
+    }
+
+    &__h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .text {
+    &__small {
+      font-size: .8rem;
+    }
+
+    &__med {
+      font-size: .9rem;
+    }
+
+    &__semibig {
+      font-size: 1.1rem;
+    }
+
+    &__big {
+      font-size: 1.2rem;
+    }
+
+    &__regular {
+      font-size: 1rem;
+    }
+  }
+
+  .list {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: .8rem;
+  }
+}
