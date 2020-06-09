@@ -29,7 +29,10 @@
 
     @include media-breakpoint-down("xl") {
       @include make-container();
-      @include make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints);
+      @include make-container-max-widths(
+        $max-widths: $container-max-widths,
+        $breakpoints: $grid-breakpoints
+      );
       flex-direction: column;
     }
 
@@ -142,7 +145,10 @@
         max-width: unset;
         height: 100vh;
         z-index: 9999;
-        overflow-y: auto;
+        overflow-y: auto !important;
+        @supports (padding: unquote("max(0px)")) {
+          padding-bottom: unquote("env(safe-area-inset-bottom, 165px)");
+        }
       }
     }
 

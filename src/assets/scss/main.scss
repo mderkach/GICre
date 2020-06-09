@@ -25,6 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   &.no-scroll {
+    position: fixed;
     padding-right: 16px;
     overflow: hidden;
 
