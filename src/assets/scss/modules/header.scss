@@ -145,9 +145,15 @@
         max-width: unset;
         height: 100vh;
         z-index: 9999;
-        overflow-y: auto !important;
-        @supports (padding: unquote("max(0px)")) {
-          padding-bottom: unquote("env(safe-area-inset-bottom, 165px)");
+        overflow-y: auto;
+        @supports (padding: unquote("max(0px)")) and
+          (padding: env(safe-area-inset-bottom)) {
+          overflow-y: scroll;
+          padding-bottom: unquote("max(200px, env(safe-area-inset-bottom))");
+
+          // @media screen and (max-width: 576px) and (orientation: landscape) {
+          //   padding-bottom: 0;
+          // }
         }
       }
     }
