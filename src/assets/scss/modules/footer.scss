@@ -41,12 +41,25 @@
     @include make-col(8);
     @include make-col-ready();
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    justify-content: space-between;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+    }
 
     @include media-breakpoint-down("lg") {
       @include make-col(12);
       flex-direction: column;
       justify-content: center;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
 
     &-block {
